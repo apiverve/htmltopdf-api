@@ -1,0 +1,105 @@
+openapi: 3.0.4
+info:
+  title: HTML to PDF
+  description: HTML to PDF is a simple tool for converting HTML to PDF. It returns the PDF file generated from the HTML.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/htmltopdf:
+    post:
+      summary: Convert HTML to PDF
+      description: HTML to PDF is a simple tool for converting HTML to PDF. It returns the PDF file generated from the HTML.
+      operationId: htmltopdf
+      parameters: []
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  marginLeft: 0.4in
+                  marginRight: 0.4in
+                  marginTop: 0.4in
+                  marginBottom: 0.4in
+                  landscape: false
+                  pdfName: 79839521-e5b1-4789-b64e-c09e53d8aa87.pdf
+                  expires: 1740259885006
+                  downloadURL: https://storage.googleapis.com/apiverve-helpers.appspot.com/htmltopdf/79839521-e5b1-4789-b64e-c09e53d8aa87.pdf?GoogleAccessId=1089020767582-compute%40developer.gserviceaccount.com&Expires=1740259885&Signature=gy9lXWJrXa4Cl3FtQLWezeRWZpf84z3tjxOYd44h2rcRACXBIRtrD%2BzKdIyn1x3vfLtO2rZnKMZx%2Fe%2Bg1Q3EAxPxWkNR9HeNxcKWA3rg45%2FWHjix0C97ud583pNb5OBlcqGmHq%2Fdu6HsEOTfUjSez%2Fml56IrgNsCKfHBWItkmHf%2FABS5u7Ji600tiIKcf2ddpKulkF1%2Fc59mPpwqNbjIbjUua9kjtcMRVAsuYSZ7hZPq1PhAMAbSl7ClPTStIi7dcWHUq%2BjO7rDDcL9l2qXCFuZgMmr0HrTr%2FD0%2BtHjyQP6rzYCldrcV0Ap4t3acQiQXSVnOAUxuGbhi9Mp90z1PGA%3D%3D
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                html:
+                  type: string
+                  description: The HTML content to convert to PDF. Ensure that the HTML is escaped properly
+                  example: <!doctype html> <html>  <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>
+                marginTop:
+                  type: number
+                  description: The top margin of the PDF in inches (e.g., 0.5)
+                  default: '0.4'
+                  example: 0.4
+                marginRight:
+                  type: number
+                  description: The right margin of the PDF in inches (e.g., 0.5)
+                  default: '0.4'
+                  example: 0.4
+                marginBottom:
+                  type: number
+                  description: The bottom margin of the PDF in inches (e.g., 0.5)
+                  default: '0.4'
+                  example: 0.4
+                marginLeft:
+                  type: number
+                  description: The left margin of the PDF in inches (e.g., 0.5)
+                  default: '0.4'
+                  example: 0.4
+              required:
+              - html
+              example:
+                marginTop: 0.4
+                marginBottom: 0.4
+                marginLeft: 0.4
+                marginRight: 0.4
+                landscape: false
+                html: <!doctype html> <html>  <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
