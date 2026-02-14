@@ -20,7 +20,7 @@ namespace APIVerve.Examples
         private static readonly string API_URL = "https://api.apiverve.com/v1/htmltopdf";
 
         /// <summary>
-        /// Make a POST request to the HTML to PDF API
+        /// Make a GET request to the HTML to PDF API
         /// </summary>
         static async Task<JsonDocument> CallHTMLtoPDFAPI()
         {
@@ -29,13 +29,7 @@ namespace APIVerve.Examples
                 using var client = new HttpClient();
                 client.DefaultRequestHeaders.Add("x-api-key", API_KEY);
 
-                // Request body
-                var requestBody &#x3D; new { marginTop &#x3D; 0.4, marginBottom &#x3D; 0.4, marginLeft &#x3D; 0.4, marginRight &#x3D; 0.4, landscape &#x3D; false, html &#x3D; &quot;&lt;!doctype html&gt; &lt;html&gt;  &lt;head&gt; &lt;title&gt;This is the title of the webpage!&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;p&gt;This is an example paragraph. Anything in the &lt;strong&gt;body&lt;/strong&gt; tag will appear on the page, just like this &lt;strong&gt;p&lt;/strong&gt; tag and its contents.&lt;/p&gt; &lt;/body&gt; &lt;/html&gt;&quot; };
-
-                var jsonContent = JsonSerializer.Serialize(requestBody);
-                var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
-
-                var response = await client.PostAsync(API_URL, content);
+                var response = await client.GetAsync(API_URL);
 
                 // Check if response is successful
                 response.EnsureSuccessStatusCode();
