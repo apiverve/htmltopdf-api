@@ -44,7 +44,14 @@ from apiverve_htmltopdf.apiClient import HtmltopdfAPIClient
 # Initialize the client with your APIVerve API key
 api = HtmltopdfAPIClient("[YOUR_API_KEY]")
 
-query = { "marginTop": 0.4, "marginBottom": 0.4, "marginLeft": 0.4, "marginRight": 0.4, "landscape": false, "html": "<!doctype html> <html> <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>" }
+query = {
+    "marginTop": 0.4,
+    "marginBottom": 0.4,
+    "marginLeft": 0.4,
+    "marginRight": 0.4,
+    "landscape": false,
+    "html": "<!doctype html> <html>  <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>"
+}
 
 try:
     # Make the API call
@@ -82,7 +89,14 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "marginTop": 0.4, "marginBottom": 0.4, "marginLeft": 0.4, "marginRight": 0.4, "landscape": false, "html": "<!doctype html> <html> <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>" }
+query = {
+    "marginTop": 0.4,
+    "marginBottom": 0.4,
+    "marginLeft": 0.4,
+    "marginRight": 0.4,
+    "landscape": false,
+    "html": "<!doctype html> <html>  <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>"
+}
 ```
 
 ###### Simple Request
@@ -127,7 +141,14 @@ from apiverve_htmltopdf.apiClient import HtmltopdfAPIClient, HtmltopdfAPIClientE
 
 api = HtmltopdfAPIClient("[YOUR_API_KEY]")
 
-query = { "marginTop": 0.4, "marginBottom": 0.4, "marginLeft": 0.4, "marginRight": 0.4, "landscape": false, "html": "<!doctype html> <html> <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>" }
+query = {
+    "marginTop": 0.4,
+    "marginBottom": 0.4,
+    "marginLeft": 0.4,
+    "marginRight": 0.4,
+    "landscape": false,
+    "html": "<!doctype html> <html>  <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>"
+}
 
 try:
     result = api.execute(query)
@@ -148,7 +169,14 @@ from apiverve_htmltopdf.apiClient import HtmltopdfAPIClient, HtmltopdfAPIClientE
 
 api = HtmltopdfAPIClient("[YOUR_API_KEY]")
 
-query = { "marginTop": 0.4, "marginBottom": 0.4, "marginLeft": 0.4, "marginRight": 0.4, "landscape": false, "html": "<!doctype html> <html> <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>" }
+query = {
+    "marginTop": 0.4,
+    "marginBottom": 0.4,
+    "marginLeft": 0.4,
+    "marginRight": 0.4,
+    "landscape": false,
+    "html": "<!doctype html> <html>  <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>"
+}
 
 try:
     result = api.execute(query)
@@ -182,7 +210,14 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_htmltopdf.apiClient import HtmltopdfAPIClient, HtmltopdfAPIClientError
 
-query = { "marginTop": 0.4, "marginBottom": 0.4, "marginLeft": 0.4, "marginRight": 0.4, "landscape": false, "html": "<!doctype html> <html> <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>" }
+query = {
+    "marginTop": 0.4,
+    "marginBottom": 0.4,
+    "marginLeft": 0.4,
+    "marginRight": 0.4,
+    "landscape": false,
+    "html": "<!doctype html> <html>  <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>"
+}
 
 # Using context manager ensures proper cleanup
 with HtmltopdfAPIClient("[YOUR_API_KEY]") as api:
@@ -208,7 +243,14 @@ from apiverve_htmltopdf.apiClient import HtmltopdfAPIClient
 # Enable debug mode
 api = HtmltopdfAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "marginTop": 0.4, "marginBottom": 0.4, "marginLeft": 0.4, "marginRight": 0.4, "landscape": false, "html": "<!doctype html> <html> <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>" }
+query = {
+    "marginTop": 0.4,
+    "marginBottom": 0.4,
+    "marginLeft": 0.4,
+    "marginRight": 0.4,
+    "landscape": false,
+    "html": "<!doctype html> <html>  <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>"
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -223,8 +265,16 @@ from apiverve_htmltopdf.apiClient import HtmltopdfAPIClient
 
 api = HtmltopdfAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "marginTop": 0.4,
+    "marginBottom": 0.4,
+    "marginLeft": 0.4,
+    "marginRight": 0.4,
+    "landscape": false,
+    "html": "<!doctype html> <html>  <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>"
+}
+
 try:
-    query = { "marginTop": 0.4, "marginBottom": 0.4, "marginLeft": 0.4, "marginRight": 0.4, "landscape": false, "html": "<!doctype html> <html> <head> <title>This is the title of the webpage!</title> </head> <body> <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p> </body> </html>" }
     result = api.execute(query)
     print(result)
 finally:
