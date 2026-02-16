@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/htmltopdf",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "HTML to PDF is a simple tool for converting HTML to PDF. It returns the PDF file generated from the HTML.",
   "main": "index.js",
   "types": "index.d.ts",
