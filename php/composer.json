@@ -1,0 +1,49 @@
+{
+    "name": "apiverve/htmltopdf",
+    "description": "HTML to PDF is a simple tool for converting HTML to PDF. It returns the PDF file generated from the HTML.",
+    "version": "1.2.0",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "APIVerve",
+            "email": "hello@apiverve.com",
+            "homepage": "https://apiverve.com"
+        }
+    ],
+    "keywords": [
+        "api",
+        "apiverve",
+        "htmltopdf",
+        "html to pdf",
+        "html to pdf api",
+        "html to pdf tool",
+        "html to pdf software",
+        "html to pdf service"
+    ],
+    "homepage": "https://htmltopdf.apiverve.com?utm_source=php&utm_medium=homepage",
+    "support": {
+        "email": "hello@apiverve.com",
+        "docs": "https://docs.apiverve.com/ref/htmltopdf",
+        "source": "https://github.com/apiverve/htmltopdf-API/tree/main/php"
+    },
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "APIVerve\\Htmltopdf\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "APIVerve\\Htmltopdf\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
