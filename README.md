@@ -207,11 +207,35 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the HTML to PDF API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "marginLeft": "0.4in",
+    "marginRight": "0.4in",
+    "marginTop": "0.4in",
+    "marginBottom": "0.4in",
+    "landscape": false,
+    "pdfName": "c064eacc-c29f-43a1-8375-a4b2562ea9d8.pdf",
+    "expires": 1766096665366,
+    "downloadURL": "https://storage.googleapis.com/apiverve-helpers.appspot.com/htmltopdf/c064eacc-c29f-43a1-8375-a4b2562ea9d8.pdf?GoogleAccessId=1089020767582-compute%40developer.gserviceaccount.com&Expires=1766096665&Signature=R%2Ft%2FXcR%2B8bXzCi5ztc01YeE%2Bbn1ZR%2BCyeoqgHpSB1z0LO3SetOSoWYVoon5IG4vUU9W30Rmw6owErorZal%2FHdgpmcPAYx3eTx5dPaD45tFSCgIfpRloi0DBLse%2Fzy4sb0k3XgweiHZUdZu3jKMi1HVDJa2j2ervAFfwDfxGHUDXH5wwFKqnv%2BIw%2Fu7MBsKMDCNMWYESE7Aicz6eL0Lxz8P6oazJX0akKlLDhkgKiIqF3VtjGIh36RzK4WGBpU36JFZ7SCZZGHNiHyt3%2FBdyjPRA8N1fky%2Bv%2BjR%2BTTlO9BpWcjImNJM6nvVfmICEfcbLqL2MvVldfPAFKyEv2zCrCLA%3D%3D"
+  }
 }
 ```
 
