@@ -1,6 +1,6 @@
 import re
-from typing import Dict, Optional, Any
-from dataclasses import dataclass, List
+from typing import Dict, Optional, Any, List
+from dataclasses import dataclass
 import requests
 
 
@@ -24,7 +24,7 @@ class ValidationError(HtmltopdfAPIClientError):
 class HtmltopdfAPIClient:
     # Validation rules for parameters (generated from schema)
     VALIDATION_RULES = {
-        "html": {"type": "string", "required": True},
+        "html": {"type": "string", "required": True, "maxLength": 500000},
         "marginTop": {"type": "number", "required": False, "default": "0.4"},
         "marginRight": {"type": "number", "required": False, "default": "0.4"},
         "marginBottom": {"type": "number", "required": False, "default": "0.4"},
