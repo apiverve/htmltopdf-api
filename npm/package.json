@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/htmltopdf",
-  "version": "1.2.0",
-  "description": "HTML to PDF is a simple tool for converting HTML to PDF. It returns the PDF file generated from the HTML.",
+  "version": "1.2.2",
+  "description": "This HTML to PDF API renders raw HTML markup into downloadable PDF files. Send your escaped HTML string to receive a signed download link, an expiration timestamp, and the generated document filename.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "html to pdf", "html to pdf api", "html to pdf tool", "html to pdf software", "html to pdf service"
+    "html to pdf api", "pdf generator api", "html to pdf converter api", "convert html to pdf api", "pdf api"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/htmltopdf-api/issues"
   },
-  "homepage": "https://htmltopdf.apiverve.com?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/htmltopdf?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",

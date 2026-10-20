@@ -30,7 +30,7 @@ class htmltopdfWrapper {
         this.baseURL = 'https://api.apiverve.com/v1/htmltopdf';
 
         // Validation rules for parameters (generated from schema)
-        this.validationRules = {"html":{"type":"string","required":true},"marginTop":{"type":"number","required":false,"default":"0.4"},"marginRight":{"type":"number","required":false,"default":"0.4"},"marginBottom":{"type":"number","required":false,"default":"0.4"},"marginLeft":{"type":"number","required":false,"default":"0.4"},"landscape":{"type":"boolean","required":false,"default":false}};
+        this.validationRules = {"html":{"type":"string","required":true,"maxLength":500000},"marginTop":{"type":"number","required":false,"default":"0.4"},"marginRight":{"type":"number","required":false,"default":"0.4"},"marginBottom":{"type":"number","required":false,"default":"0.4"},"marginLeft":{"type":"number","required":false,"default":"0.4"},"landscape":{"type":"boolean","required":false,"default":false}};
     }
 
     /**
