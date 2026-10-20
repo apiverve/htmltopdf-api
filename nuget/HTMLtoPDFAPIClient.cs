@@ -67,7 +67,7 @@ namespace APIVerve.API.HTMLtoPDF
         /// <summary>Validation rules for parameters</summary>
         private static readonly Dictionary<string, ValidationRule> _validationRules = new Dictionary<string, ValidationRule>
         {
-            { "html", new ValidationRule { Type = "string", Required = true } },
+            { "html", new ValidationRule { Type = "string", Required = true, MaxLength = 500000 } },
             { "marginTop", new ValidationRule { Type = "number", Required = false } },
             { "marginRight", new ValidationRule { Type = "number", Required = false } },
             { "marginBottom", new ValidationRule { Type = "number", Required = false } },
