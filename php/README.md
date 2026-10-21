@@ -1,6 +1,6 @@
 # HTML to PDF API - PHP Package
 
-HTML to PDF is a simple tool for converting HTML to PDF. It returns the PDF file generated from the HTML.
+This HTML to PDF API renders raw HTML markup into downloadable PDF files. Send your escaped HTML string to receive a signed download link, an expiration timestamp, and the generated document filename.
 
 ## Installation
 
@@ -95,11 +95,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/htmltopdf?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/htmltopdf?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://htmltopdf.apiverve.com?utm_source=php&utm_medium=readme](https://htmltopdf.apiverve.com?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/htmltopdf?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/htmltopdf?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License

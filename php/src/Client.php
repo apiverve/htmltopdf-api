@@ -19,7 +19,7 @@ use APIVerve\Htmltopdf\Exceptions\ValidationException;
  * print_r($response);
  * ```
  *
- * @see https://htmltopdf.apiverve.com?utm_source=php&utm_medium=readme
+ * @see https://apiverve.com/marketplace/htmltopdf?utm_source=php&utm_medium=referral&utm_content=readme
  */
 class Client
 {
@@ -34,7 +34,7 @@ class Client
      * Validation rules for parameters
      */
     private const VALIDATION_RULES = [
-        'html' => ['type' => 'string', 'required' => true],
+        'html' => ['type' => 'string', 'required' => true, 'maxLength' => 500000],
         'marginTop' => ['type' => 'number', 'required' => false],
         'marginRight' => ['type' => 'number', 'required' => false],
         'marginBottom' => ['type' => 'number', 'required' => false],
