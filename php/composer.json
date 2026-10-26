@@ -1,7 +1,7 @@
 {
     "name": "apiverve/htmltopdf",
     "description": "This HTML to PDF API renders raw HTML markup into downloadable PDF files. Send your escaped HTML string to receive a signed download link, an expiration timestamp, and the generated document filename.",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "type": "library",
     "license": "MIT",
     "authors": [
