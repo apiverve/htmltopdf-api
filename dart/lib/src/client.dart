@@ -46,15 +46,21 @@ final _formatPatterns = {
 
 /// HTML to PDF API client.
 ///
-/// For more information, visit: https://htmltopdf.apiverve.com?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/htmltopdf?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
-/// * [html] (required) - The HTML content to convert to PDF. Ensure that the HTML is escaped properly
+/// * [html] (required) - The HTML content to convert to PDF. Ensure that the HTML is escaped properly [maxLength: 500000]
 /// * [marginTop] - The top margin of the PDF in inches (e.g., 0.5)
 /// * [marginRight] - The right margin of the PDF in inches (e.g., 0.5)
 /// * [marginBottom] - The bottom margin of the PDF in inches (e.g., 0.5)
 /// * [marginLeft] - The left margin of the PDF in inches (e.g., 0.5)
 /// * [landscape] - Set to true for landscape orientation
+/// * [format] - Paper size
+/// * [scale] - Zoom applied to the page content, 0.1 to 2 [min: 0.1, max: 2]
+/// * [printBackground] - Print background colours and images; set false for an ink-saving document
+/// * [pageRanges] - Only these pages, e.g. 1-3, 5
+/// * [headerTemplate] - HTML printed at the top of every page. Spans with class pageNumber, totalPages, date, title or url are filled in. Use inline styles with a font-size (Chromium defaults to a tiny font) and leave room with marginTop [format: url]
+/// * [footerTemplate] - HTML printed at the bottom of every page, with the same placeholders as headerTemplate, e.g. <span class="pageNumber"></span> of <span class="totalPages"></span>
 class HtmltopdfClient {
   final String apiKey;
   final String baseUrl;
@@ -62,12 +68,18 @@ class HtmltopdfClient {
 
   /// Validation rules for parameters.
   static final Map<String, ValidationRule> _validationRules = <String, ValidationRule>{
-    'html': ValidationRule(type: 'string', required: true),
+    'html': ValidationRule(type: 'string', required: true, maxLength: 500000),
     'marginTop': ValidationRule(type: 'number', required: false),
     'marginRight': ValidationRule(type: 'number', required: false),
     'marginBottom': ValidationRule(type: 'number', required: false),
     'marginLeft': ValidationRule(type: 'number', required: false),
     'landscape': ValidationRule(type: 'boolean', required: false),
+    'format': ValidationRule(type: 'string', required: false),
+    'scale': ValidationRule(type: 'number', required: false, min: 0.1, max: 2),
+    'printBackground': ValidationRule(type: 'boolean', required: false),
+    'pageRanges': ValidationRule(type: 'string', required: false),
+    'headerTemplate': ValidationRule(type: 'string', required: false, format: 'url'),
+    'footerTemplate': ValidationRule(type: 'string', required: false),
   };
 
   HtmltopdfClient(this.apiKey, {

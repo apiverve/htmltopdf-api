@@ -1,11 +1,11 @@
 # HTML to PDF API - Dart/Flutter Client
 
-HTML to PDF is a simple tool for converting HTML to PDF. It returns the PDF file generated from the HTML.
+This HTML to PDF API renders raw HTML markup into downloadable PDF files. Send your escaped HTML string to receive a signed download link, an expiration timestamp, and the generated document filename.
 
 [![pub package](https://img.shields.io/pub/v/apiverve_htmltopdf.svg)](https://pub.dev/packages/apiverve_htmltopdf)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the Dart/Flutter client for the [HTML to PDF API](https://htmltopdf.apiverve.com?utm_source=dart&utm_medium=readme).
+This is the Dart/Flutter client for the [HTML to PDF API](https://apiverve.com/marketplace/htmltopdf?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## Installation
 
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_htmltopdf: ^1.1.14
+  apiverve_htmltopdf: ^1.2.4
 ```
 
 Then run:
@@ -62,21 +62,24 @@ void main() async {
     "marginTop": "0.4in",
     "marginBottom": "0.4in",
     "landscape": false,
-    "pdfName": "79839521-e5b1-4789-b64e-c09e53d8aa87.pdf",
-    "expires": 1740259885006,
-    "downloadURL": "https://storage.googleapis.com/apiverve-helpers.appspot.com/htmltopdf/79839521-e5b1-4789-b64e-c09e53d8aa87.pdf?GoogleAccessId=1089020767582-compute%40developer.gserviceaccount.com&Expires=1740259885&Signature=gy9lXWJrXa4Cl3FtQLWezeRWZpf84z3tjxOYd44h2rcRACXBIRtrD%2BzKdIyn1x3vfLtO2rZnKMZx%2Fe%2Bg1Q3EAxPxWkNR9HeNxcKWA3rg45%2FWHjix0C97ud583pNb5OBlcqGmHq%2Fdu6HsEOTfUjSez%2Fml56IrgNsCKfHBWItkmHf%2FABS5u7Ji600tiIKcf2ddpKulkF1%2Fc59mPpwqNbjIbjUua9kjtcMRVAsuYSZ7hZPq1PhAMAbSl7ClPTStIi7dcWHUq%2BjO7rDDcL9l2qXCFuZgMmr0HrTr%2FD0%2BtHjyQP6rzYCldrcV0Ap4t3acQiQXSVnOAUxuGbhi9Mp90z1PGA%3D%3D"
+    "format": "A4",
+    "scale": 1,
+    "pageCount": 1,
+    "pdfName": "c064eacc-c29f-43a1-8375-a4b2562ea9d8.pdf",
+    "expires": 1766096665366,
+    "downloadURL": "https://storage.googleapis.com/apiverve-helpers.appspot.com/htmltopdf/c064eacc-c29f-43a1-8375-a4b2562ea9d8.pdf?GoogleAccessId=1089020767582-compute%40developer.gserviceaccount.com&Expires=1766096665&Signature=R%2Ft%2FXcR%2B8bXzCi5ztc01YeE%2Bbn1ZR%2BCyeoqgHpSB1z0LO3SetOSoWYVoon5IG4vUU9W30Rmw6owErorZal%2FHdgpmcPAYx3eTx5dPaD45tFSCgIfpRloi0DBLse%2Fzy4sb0k3XgweiHZUdZu3jKMi1HVDJa2j2ervAFfwDfxGHUDXH5wwFKqnv%2BIw%2Fu7MBsKMDCNMWYESE7Aicz6eL0Lxz8P6oazJX0akKlLDhkgKiIqF3VtjGIh36RzK4WGBpU36JFZ7SCZZGHNiHyt3%2FBdyjPRA8N1fky%2Bv%2BjR%2BTTlO9BpWcjImNJM6nvVfmICEfcbLqL2MvVldfPAFKyEv2zCrCLA%3D%3D"
   }
 }
 ```
 
 ## API Reference
 
-- **API Home:** [HTML to PDF API](https://htmltopdf.apiverve.com?utm_source=dart&utm_medium=readme)
-- **Documentation:** [docs.apiverve.com/ref/htmltopdf](https://docs.apiverve.com/ref/htmltopdf?utm_source=dart&utm_medium=readme)
+- **API Home:** [HTML to PDF API](https://apiverve.com/marketplace/htmltopdf?utm_source=dart&utm_medium=referral&utm_content=readme)
+- **Documentation:** [docs.apiverve.com/ref/htmltopdf](https://docs.apiverve.com/ref/htmltopdf?utm_source=dart&utm_medium=referral&utm_content=readme)
 
 ## Authentication
 
-All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=readme).
+All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## License
 
@@ -84,4 +87,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=readme)
+Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme)

@@ -1,7 +1,7 @@
 name: apiverve_htmltopdf
-description: HTML to PDF is a simple tool for converting HTML to PDF. It returns the PDF file generated from the HTML.
-version: 1.1.14
-homepage: https://htmltopdf.apiverve.com?utm_source=dart&utm_medium=homepage
+description: "This HTML to PDF API renders raw HTML markup into downloadable PDF files. Send your escaped HTML string to receive a signed download link, an expiration timestamp, and the generated document filename."
+version: 1.2.4
+homepage: https://apiverve.com/marketplace/htmltopdf?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/htmltopdf-api/tree/main/dart
 
 environment:

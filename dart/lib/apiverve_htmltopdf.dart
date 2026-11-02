@@ -1,8 +1,8 @@
 /// HTML to PDF API client for Dart/Flutter
 ///
-/// HTML to PDF is a simple tool for converting HTML to PDF. It returns the PDF file generated from the HTML.
+/// This HTML to PDF API renders raw HTML markup into downloadable PDF files. Send your escaped HTML string to receive a signed download link, an expiration timestamp, and the generated document filename.
 ///
-/// For more information, visit: https://htmltopdf.apiverve.com?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/htmltopdf?utm_source=dart&utm_medium=referral&utm_content=readme
 library apiverve_htmltopdf;
 
 export 'src/client.dart';
