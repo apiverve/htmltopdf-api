@@ -72,7 +72,13 @@ namespace APIVerve.API.HTMLtoPDF
             { "marginRight", new ValidationRule { Type = "number", Required = false } },
             { "marginBottom", new ValidationRule { Type = "number", Required = false } },
             { "marginLeft", new ValidationRule { Type = "number", Required = false } },
-            { "landscape", new ValidationRule { Type = "boolean", Required = false } }
+            { "landscape", new ValidationRule { Type = "boolean", Required = false } },
+            { "format", new ValidationRule { Type = "string", Required = false } },
+            { "scale", new ValidationRule { Type = "number", Required = false, Min = 0.1, Max = 2 } },
+            { "printBackground", new ValidationRule { Type = "boolean", Required = false } },
+            { "pageRanges", new ValidationRule { Type = "string", Required = false } },
+            { "headerTemplate", new ValidationRule { Type = "string", Required = false, Format = "url" } },
+            { "footerTemplate", new ValidationRule { Type = "string", Required = false } }
         };
 
         /// <summary>Format validation patterns</summary>

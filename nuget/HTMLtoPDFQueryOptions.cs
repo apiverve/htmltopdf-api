@@ -45,5 +45,41 @@ namespace APIVerve.API.HTMLtoPDF
         /// </summary>
         [JsonProperty("landscape")]
         public bool? Landscape { get; set; }
+
+        /// <summary>
+        /// Paper size
+        /// </summary>
+        [JsonProperty("format")]
+        public string Format { get; set; }
+
+        /// <summary>
+        /// Zoom applied to the page content, 0.1 to 2
+        /// </summary>
+        [JsonProperty("scale")]
+        public double? Scale { get; set; }
+
+        /// <summary>
+        /// Print background colours and images; set false for an ink-saving document
+        /// </summary>
+        [JsonProperty("printBackground")]
+        public bool? PrintBackground { get; set; }
+
+        /// <summary>
+        /// Only these pages, e.g. 1-3, 5
+        /// </summary>
+        [JsonProperty("pageRanges")]
+        public string PageRanges { get; set; }
+
+        /// <summary>
+        /// HTML printed at the top of every page. Spans with class pageNumber, totalPages, date, title or url are filled in. Use inline styles with a font-size (Chromium defaults to a tiny font) and leave room with marginTop
+        /// </summary>
+        [JsonProperty("headerTemplate")]
+        public string HeaderTemplate { get; set; }
+
+        /// <summary>
+        /// HTML printed at the bottom of every page, with the same placeholders as headerTemplate, e.g. <span class="pageNumber"></span> of <span class="totalPages"></span>
+        /// </summary>
+        [JsonProperty("footerTemplate")]
+        public string FooterTemplate { get; set; }
     }
 }
