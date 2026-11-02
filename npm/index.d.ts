@@ -30,6 +30,9 @@ declare module '@apiverve/htmltopdf' {
       marginTop:    null | string;
       marginBottom: null | string;
       landscape:    boolean | null;
+      format:       null | string;
+      scale:        number | null;
+      pageCount:    number | null;
       pdfName:      null | string;
       expires:      number | null;
       downloadURL:  null | string;
