@@ -39,7 +39,13 @@ class Client
         'marginRight' => ['type' => 'number', 'required' => false],
         'marginBottom' => ['type' => 'number', 'required' => false],
         'marginLeft' => ['type' => 'number', 'required' => false],
-        'landscape' => ['type' => 'boolean', 'required' => false]
+        'landscape' => ['type' => 'boolean', 'required' => false],
+        'format' => ['type' => 'string', 'required' => false],
+        'scale' => ['type' => 'number', 'required' => false, 'min' => 0.1, 'max' => 2],
+        'printBackground' => ['type' => 'boolean', 'required' => false],
+        'pageRanges' => ['type' => 'string', 'required' => false],
+        'headerTemplate' => ['type' => 'string', 'required' => false, 'format' => 'url'],
+        'footerTemplate' => ['type' => 'string', 'required' => false]
     ];
 
     /**
