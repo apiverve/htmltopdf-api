@@ -1,6 +1,6 @@
 name: apiverve_htmltopdf
 description: "This HTML to PDF API renders raw HTML markup into downloadable PDF files. Send your escaped HTML string to receive a signed download link, an expiration timestamp, and the generated document filename."
-version: 1.2.4
+version: 1.2.5
 homepage: https://apiverve.com/marketplace/htmltopdf?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/htmltopdf-api/tree/main/dart
 
