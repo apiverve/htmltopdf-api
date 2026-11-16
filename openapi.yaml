@@ -75,16 +75,20 @@ paths:
                     escaped properly
                 marginTop:
                   type: number
-                  description: The top margin of the PDF in inches (e.g., 0.5)
+                  description: The top margin of the PDF in inches from 0 to 4 (e.g., 0.5)
                 marginRight:
                   type: number
-                  description: The right margin of the PDF in inches (e.g., 0.5)
+                  description: >-
+                    The right margin of the PDF in inches from 0 to 4 (e.g.,
+                    0.5)
                 marginBottom:
                   type: number
-                  description: The bottom margin of the PDF in inches (e.g., 0.5)
+                  description: >-
+                    The bottom margin of the PDF in inches from 0 to 4 (e.g.,
+                    0.5)
                 marginLeft:
                   type: number
-                  description: The left margin of the PDF in inches (e.g., 0.5)
+                  description: The left margin of the PDF in inches from 0 to 4 (e.g., 0.5)
                 landscape:
                   type: boolean
                   description: Set to true for landscape orientation
