@@ -25,16 +25,16 @@ class HtmltopdfAPIClient:
     # Validation rules for parameters (generated from schema)
     VALIDATION_RULES = {
         "html": {"type": "string", "required": True, "maxLength": 500000},
-        "marginTop": {"type": "number", "required": False, "default": "0.4"},
-        "marginRight": {"type": "number", "required": False, "default": "0.4"},
-        "marginBottom": {"type": "number", "required": False, "default": "0.4"},
-        "marginLeft": {"type": "number", "required": False, "default": "0.4"},
+        "marginTop": {"type": "number", "required": False, "min": 0, "max": 4, "default": "0.4"},
+        "marginRight": {"type": "number", "required": False, "min": 0, "max": 4, "default": "0.4"},
+        "marginBottom": {"type": "number", "required": False, "min": 0, "max": 4, "default": "0.4"},
+        "marginLeft": {"type": "number", "required": False, "min": 0, "max": 4, "default": "0.4"},
         "landscape": {"type": "boolean", "required": False, "default": False},
         "format": {"type": "string", "required": False, "default": "A4"},
         "scale": {"type": "number", "required": False, "min": 0.1, "max": 2, "default": 1},
         "printBackground": {"type": "boolean", "required": False, "default": True},
         "pageRanges": {"type": "string", "required": False},
-        "headerTemplate": {"type": "string", "required": False, "format": "url"},
+        "headerTemplate": {"type": "string", "required": False},
         "footerTemplate": {"type": "string", "required": False}
     }
 
