@@ -68,16 +68,16 @@ namespace APIVerve.API.HTMLtoPDF
         private static readonly Dictionary<string, ValidationRule> _validationRules = new Dictionary<string, ValidationRule>
         {
             { "html", new ValidationRule { Type = "string", Required = true, MaxLength = 500000 } },
-            { "marginTop", new ValidationRule { Type = "number", Required = false } },
-            { "marginRight", new ValidationRule { Type = "number", Required = false } },
-            { "marginBottom", new ValidationRule { Type = "number", Required = false } },
-            { "marginLeft", new ValidationRule { Type = "number", Required = false } },
+            { "marginTop", new ValidationRule { Type = "number", Required = false, Min = 0, Max = 4 } },
+            { "marginRight", new ValidationRule { Type = "number", Required = false, Min = 0, Max = 4 } },
+            { "marginBottom", new ValidationRule { Type = "number", Required = false, Min = 0, Max = 4 } },
+            { "marginLeft", new ValidationRule { Type = "number", Required = false, Min = 0, Max = 4 } },
             { "landscape", new ValidationRule { Type = "boolean", Required = false } },
             { "format", new ValidationRule { Type = "string", Required = false } },
             { "scale", new ValidationRule { Type = "number", Required = false, Min = 0.1, Max = 2 } },
             { "printBackground", new ValidationRule { Type = "boolean", Required = false } },
             { "pageRanges", new ValidationRule { Type = "string", Required = false } },
-            { "headerTemplate", new ValidationRule { Type = "string", Required = false, Format = "url" } },
+            { "headerTemplate", new ValidationRule { Type = "string", Required = false } },
             { "footerTemplate", new ValidationRule { Type = "string", Required = false } }
         };
 

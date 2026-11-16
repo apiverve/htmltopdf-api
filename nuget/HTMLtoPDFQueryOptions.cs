@@ -17,25 +17,25 @@ namespace APIVerve.API.HTMLtoPDF
         public string Html { get; set; }
 
         /// <summary>
-        /// The top margin of the PDF in inches (e.g., 0.5)
+        /// The top margin of the PDF in inches from 0 to 4 (e.g., 0.5)
         /// </summary>
         [JsonProperty("marginTop")]
         public double? MarginTop { get; set; }
 
         /// <summary>
-        /// The right margin of the PDF in inches (e.g., 0.5)
+        /// The right margin of the PDF in inches from 0 to 4 (e.g., 0.5)
         /// </summary>
         [JsonProperty("marginRight")]
         public double? MarginRight { get; set; }
 
         /// <summary>
-        /// The bottom margin of the PDF in inches (e.g., 0.5)
+        /// The bottom margin of the PDF in inches from 0 to 4 (e.g., 0.5)
         /// </summary>
         [JsonProperty("marginBottom")]
         public double? MarginBottom { get; set; }
 
         /// <summary>
-        /// The left margin of the PDF in inches (e.g., 0.5)
+        /// The left margin of the PDF in inches from 0 to 4 (e.g., 0.5)
         /// </summary>
         [JsonProperty("marginLeft")]
         public double? MarginLeft { get; set; }
